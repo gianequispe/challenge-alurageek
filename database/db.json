@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "name": "Stickers",
+      "price": "1,50",
+      "image": "https://i.pinimg.com/564x/42/e4/cf/42e4cf4a4de4d66c8fb7d073e3e0d133.jpg",
+      "id": "1"
+    },
+    {
+      "name": "Action Figure One piece",
+      "price": "8",
+      "image": "https://i.pinimg.com/564x/91/da/5b/91da5b399b37d1473644db579b72b158.jpg",
+      "id": "2"
+    },
+    {
+      "name": "Sonny Angel",
+      "price": "12,50",
+      "image": "https://i.pinimg.com/736x/6e/de/30/6ede30636782d55163db281de62e9b0e.jpg",
+      "id": "5"
+    }
+  ]
+}

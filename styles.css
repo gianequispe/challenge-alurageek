@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #e1b9a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.section-my-products {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0 7rem 0;
+}
+
+.section-my-products h1,
+.section-form h1 {
+    margin-top: 2em;
+    text-align: center;
+    font-size: 27px;
+}
+
+.products-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 20px 0 20px 0;
+    width: 700px;
+    height: 600px; 
+    background-image: url(img/background.jpg);
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-color: #aac7e769;
+    overflow: scroll;
+    overflow-x: visible;
+    margin-top: 2em;
+    border-radius: 10px;
+    border: 3px solid rgb(116, 112, 112);
+}
+
+.products-container::-webkit-scrollbar {
+    width: 7px;
+}
+
+.products-container::-webkit-scrollbar-thumb {
+    background: rgba(177, 175, 175, 0.774);
+    background: linear-gradient(45deg, #e1b9a1 15%, #aca0bd 76%);
+    border-radius: 10px;
+}
+
+.card {
+    backdrop-filter: blur(2px);
+    box-shadow: 0 4px 15px 0 rgba(8, 8, 8, 0.432);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1em;
+    width: 210px;
+    height: 58%;
+}
+
+.card-container-img img {
+    display: flex;
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-container-img {
+    display: flex;
+    justify-content: center;
+}
+
+.card-container-info p {
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.card-container-value {
+    margin-top: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container-value p {
+    font-weight: 600;
+}
+
+.delete-button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.delete-button img {
+    width: 20px;
+}
+
+.delete-button img:hover {
+    transition: .3s;
+    transform: scale(1.2);
+}
+
+.section-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1em 0 0 2.5em;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    width: 220px;
+    height: 40px;
+    padding: 8px;
+    border: 3px solid #c7a6ae;
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: #111113;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: .5em;
+    background-color: #aca0bd;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-group .btn-submit {
+    background-color: #a8bd8d;
+}
+
+.btn-submit:hover {
+    box-shadow: 0 0 15px #a8bd8d,
+    0 0 25px #a8bd8d, 0 0 40px #a8bd8d;
+    transition: all .2s ease;
+}
+
+.btn-clear:hover {
+    box-shadow: 0 0 15px #aca0bd,
+    0 0 25px #aca0bd, 0 0 40px #aca0bd;
+    transition: all .2s ease;
+}
+
+footer {
+    width: 100%;
+    background-color: #e1b9a1;
+    text-align: center;
+    line-height: 2em;
+    padding: 20px;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column-reverse;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .section-my-products h1,
+    .section-form h1 {
+        margin-top: 1em;
+    }
+ 
+    .products-container {
+        margin-top: 1.5em;
+        gap: .1em;
+        width: 300px;
+        height: 700px;
+    }
+
+    .card {
+        height: 45%;
+    }
+
+    .section-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 1em 0 0 0;
+    }
+}

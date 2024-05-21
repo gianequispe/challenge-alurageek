@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Tilt+Neon&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Alura Geek</title>
+</head>
+<body>
+    <header> 
+        <img src="img/heartsAlurageek.png" alt="icono">
+    </header>
+
+    <main class="main-container">
+         <section class="section-my-products">
+                <h1>Mis productos</h1>
+                <div class="products-container" data-product>
+                    <!-- <div class="card">
+                        <div class="card-container-img">
+                            <img src="https://i.pinimg.com/564x/71/92/8e/71928ecd62aebab2bb09165043743cf6.jpg" alt="producto">
+                        </div>
+                        
+                        <div class="card-container-info">
+                            <p>Ternurine</p>
+                            <div class="card-container-value">
+                                <p>$ 25,00</p>
+                                <button class="delete-button" data-id="${id}">
+                                    <img src="img/delete.png" alt="eliminar">
+                                </button>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="card">
+                        <div class="card-container-img">
+                            <img src="https://i.pinimg.com/564x/71/92/8e/71928ecd62aebab2bb09165043743cf6.jpg" alt="producto">
+                        </div>
+                        
+                        <div class="card-container-info">
+                            <p>Ternurine</p>
+                            <div class="card-container-value">
+                                <p>$ 25,00</p>
+                                <button class="delete-button" data-id="${id}">
+                                    <img src="img/delete.png" alt="eliminar">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-container-img">
+                            <img src="https://i.pinimg.com/564x/71/92/8e/71928ecd62aebab2bb09165043743cf6.jpg" alt="producto">
+                        </div>
+                        
+                        <div class="card-container-info">
+                            <p>Ternurine</p>
+                            <div class="card-container-value">
+                                <p>$ 25,00</p>
+                                <button class="delete-button" data-id="${id}">
+                                    <img src="img/delete.png" alt="eliminar">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
+        <section class="section-form">
+            <h1>Agregar<br>Producto:</h1>
+            <form class="form-container" data-form>
+                <div class="form-group">
+                  <input type="text" id="name" placeholder="nombre..." minlength="2" data-name required>
+                </div>
+              
+                <div class="form-group">
+                  <input type="text" id="price" placeholder="precio..." data-price required>
+                </div>
+                
+                <div class="form-group">
+                  <input type="text" id="image" placeholder="imagen..." data-image required>
+                </div>
+                
+                <div class="button-group">
+                  <button class="btn-submit" id="button" type="submit">Enviar</button>
+                  <button class="btn-clear"  type="reset">Limpiar</button>
+                </div>
+              </form>
+        </section>
+     
+    </main>
+  
+    <footer>
+        <img src="img/AluraGeek.png" alt="icono">
+        <p>Desarrollado por Gianella Quispe</p>
+        <p>Alura latam - 2024</p>
+    </footer> 
+    <script type="module" src="js/controllers/main.js"></script>
+</body>
+</html>
